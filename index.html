@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
@@ -11,16 +11,22 @@
         type="image/icon type">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <style type="text/css">
+            a img {
+                width: 25%;
+            }
+        </style>
 </head>
 
 <body>
-    <header class='bg-secondary'>
+    <header class='bg-secondary' style="position: fixed; z-index: 1;">
         <div class="row text-white">
-            <div class="col-md-6 col-9 p-3">
+            <div class="col-md-5 col-9 p-3">
                 <H2>Amal Raju</H2>
             </div>
-            <div class="col-md-6 col-3 my-auto ">
-                <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="col-md-7 col-3 my-auto ">
+                <nav class="navbar_top navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -42,7 +48,10 @@
                                     <a class="nav-link text-white" href="#experience">Experiences</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">Contact Me</a>
+                                    <a class="nav-link text-white" href="#gallery">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#contact">Contact Me</a>
                                 </li>
 
                             </ul>
@@ -53,7 +62,7 @@
         </div>
 
     </header>
-    <section class="p-4">
+    <section style="padding-top: 8em;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
@@ -61,16 +70,17 @@
 
                 </div>
                 <div class="col-md-6">
-                    <h4> Production & Quality Control Manager at </h4>
+                    <h4 class="pt-4"> Production & Quality Control Manager at </h4>
                     <!-- <h3>Malian Cashew Company SARL.</h3> -->
-                    <H4>Mali-West Affrica</H4>
+                    <H4>India & West Affrica</H4>
+                    <a href="#contact" class="btn btn-info " style="width: fit-content;">Get My CV</a>
 
                 </div>
             </div>
         </div>
     </section>
-    <section class="p-5 bg-image" style="
-      background-image: url('./public/Images/amalraju002.jpg');
+    <section class=" bg-image" style="padding-top: 8em;
+      background-image: url('./public/Images/background1.jfif');
       height: 100vh;" id="about">
         <div>
             <div class="heading ">
@@ -87,20 +97,22 @@
             </div>
         </div>
     </section>
-    <section class="bg-light h-10 p-5" id="services">
+
+
+    <section class="bg-light h-10" id="services" style="padding-top: 8em;">
         <div class="container col-md-12"">
                 <h1 class=" text-center">Services</h1>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card text-center p-3" style="width: 15rem; height: 16rem;">
+                <div class="col-md-3 mt-3">
+                    <div class="card text-center p-3" style=" height: 16rem;">
                         <i class="fas fa-microscope display-1 text-secondary"></i>
                         <div class="card-body pt-4">
                             <h5 class="card-title">Ensure the RCN quality at the time of reciept by cutting test</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card text-center p-3" style="width: 15rem; height: 16rem;">
+                <div class="col-md-3 mt-3">
+                    <div class="card text-center p-3" style=" height: 16rem;">
                         <i class="fas fa-sitemap display-1 text-secondary"></i>
                         <div class="card-body pt-4">
                             <h5 class="card-title">Handle the entire factory operations</h5>
@@ -108,8 +120,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card text-center p-3" style="width: 15rem; height: 16rem;">
+                <div class="col-md-3 mt-3">
+                    <div class="card text-center p-3" style="height: 16rem;">
                         <i class="fas fa-trophy display-1 text-secondary"></i>
                         <div class="card-body pt-4">
                             <h5 class="card-title">Achieve the production target as per the company norms</h5>
@@ -117,8 +129,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card text-center p-3" style="width: 15rem; height: 16rem;">
+                <div class="col-md-3 mt-3">
+                    <div class="card text-center p-3" style="height: 16rem;">
                         <i class="far fa-chart-bar display-1 text-secondary"></i>
                         <div class="card-body pt-4">
                             <h5 class="card-title">Ensure the outturn as per company norms</h5>
@@ -127,64 +139,65 @@
                 </div>
             </div>
 
-            <div class="row mt-3">
-                <div class="col-md-3">
-                    <div class="card text-center p-3" style="width: 15rem; height: 16rem;">
+            <div class="row">
+                <div class="col-md-3 mt-3">
+                    <div class="card text-center p-3" style="height: 16rem;">
                         <i class="fas fa-poll-h display-1 text-secondary"></i>
                         <div class="card-body pt-4">
                             <h5 class="card-title">Ensure the quality of the graded kernels</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card text-center p-3" style="width: 15rem; height: 16rem;">
+                <div class="col-md-3 mt-3">
+                    <div class="card text-center p-3" style="height: 16rem;">
                         <i class="fas fa-user-tie display-1 text-secondary"></i>
                         <div class="card-body pt-4">
                             <h5 class="card-title">Overall management of factory independently.</h5>
                         </div>
                     </div>
                 </div>
-            
-                <div class="col-md-3">
-                    <div class="card text-center p-3" style="width: 15rem; height: 16rem;">
+
+                <div class="col-md-3 mt-3">
+                    <div class="card text-center p-3" style="height: 16rem;">
                         <i class="fas fa-list-ol display-1 text-secondary"></i>
                         <div class="card-body pt-4">
                             <h5 class="card-title">Quality checking of graded cashew kernel</h5>
                         </div>
                     </div>
                 </div>
-            
-                <div class="col-md-3">
-                    <div class="card text-center p-3" style="width: 15rem; height: 16rem;">
+
+                <div class="col-md-3 mt-3">
+                    <div class="card text-center p-3" style="height: 16rem;">
                         <i class="fas fa-users-cog display-1 text-secondary"></i>
                         <div class="card-body pt-4">
-                            <h5 class="card-title">Complete factory management, Production, quality and labour management.</h5>
+                            <h5 class="card-title">Complete factory management, Production, quality and labour
+                                management.</h5>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div class="row mt-3">
-                <div class="col-md-3">
-                    <div class="card text-center p-3" style="width: 15rem; height: 16rem;">
+            <div class="row">
+                <div class="col-md-3 mt-3">
+                    <div class="card text-center p-3" style="height: 16rem;">
                         <i class="fas fa-luggage-cart display-1 text-secondary"></i>
                         <div class="card-body pt-4">
                             <h5 class="card-title">Quality checking of the arrival materials</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card text-center p-3" style="width: 15rem; height: 16rem;">
+                <div class="col-md-3 mt-3">
+                    <div class="card text-center p-3" style="height: 16rem;">
                         <i class="fas fa-boxes display-1 text-secondary"></i>
                         <div class="card-body pt-4">
                             <h5 class="card-title">Ensure the quality of the shipped material.</h5>
                         </div>
                     </div>
                 </div>
-            
-                <div class="col-md-3">
-                    <div class="card text-center p-3" style="width: 15rem; height: 16rem;">
+
+                <div class="col-md-3 mt-3">
+                    <div class="card text-center p-3" style="height: 16rem;">
                         <i class="fas fa-warehouse display-1 text-secondary"></i>
                         <div class="card-body pt-4">
                             <h5 class="card-title">Complete Ware house management</h5>
@@ -196,51 +209,65 @@
         </div>
 
     </section>
-    <section class="bg-white p-5" id="experience">
+    <section class="bg-white" id="experience" style="padding-top: 8em">
         <h1 class=" text-center">Experiences</h1>
         <div class="container">
             <div class="row">
 
-                <div class="col-md-4">
-                    <div class="card text-center align-items-center p-2" style="width: 22rem; height: 32rem;">
-                        <img style="width: 10rem;" src="./public/Images/vlc logo.png" alt="">
-                        <!-- <i class="fas fa-warehouse display-1 text-secondary"></i> -->
-                        <div class="card-body pt-4">
-                            <a href="http://www.vlccashews.com"hidden>aaaaaaaaaaaaaaaaaaa</a>
-                            <h5 class="card-title">Vijayalaxmi Cashew Company - Sunfood Corporation(2014-19)</h5><hr/>
-                            <p class="card-text">➢ Completed production orders within strict deadlines
-                            Managed other Production Workers and worked as team leader to enhance
-                            productivity.</p>
-                            <p class="card-text">➢ Cutting, Peeling, Grading & Filling machine maintance</p>
-                            <p class="card-text">➢ Accounts, Inventory & Financial Experience</p>
-                        </div>
+                <div class="col-md-4 mt-3">
+                    <div class="card text-center align-items-center p-2" style="height: 32rem;">
+                        <a href="http://www.vlccashews.com" style="text-decoration: none; color: darkcyan;">
+                            <img style="width: 10rem;" src="./public/Images/vlc logo.png" alt="">
+                            <!-- <i class="fas fa-warehouse display-1 text-secondary"></i> -->
+                            <div class="card-body pt-4">
+                                <h5 class="card-title">Vijayalaxmi Cashew Company - Sunfood Corporation(2014-19)</h5>
+                                <hr />
+                                <p class="card-text">➢ Completed production orders within strict deadlines
+                                    Managed other Production Workers and worked as team leader to enhance
+                                    productivity.</p>
+                                <p class="card-text">➢ Cutting, Peeling, Grading & Filling machine maintance</p>
+                                <p class="card-text">➢ Accounts, Inventory & Financial Experience</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card text-center align-items-center p-2" style="width: 22rem; height: 32rem;">
-                        <i class="far fa-building display-1 text-secondary"></i>
-                        <!-- <i class="fas fa-warehouse display-1 text-secondary"></i> -->
-                        <div class="card-body pt-4">
-                            <h5 class="card-title">Dhillon Brothers International Ltd. -Republic of Ghana
-                            2019 to 2021</h5>
-                            <hr />
-                            <p class="card-text">➢ Done procurement 1500 MT cashew in Ghana on 2019.</p>
-                            <p class="card-text">➢ Done procurement 2000 MT cashew in Ghana on 2020.</p>
-                        </div>
+                <div class="col-md-4 mt-3">
+                    <div class="card text-center align-items-center p-2" style="height: 32rem;">
+                        <a href="#" style="text-decoration: none; color: darkcyan;">
+                            <img style="width: 10rem;" src="./public/Images/logo 02.jpeg" alt="">
+                            <!-- <i class="far fa-building display-1 text-secondary"></i> -->
+                            <!-- <i class="fas fa-warehouse display-1 text-secondary"></i> -->
+                            <div class="card-body pt-4">
+                                <h5 class="card-title">Dhillon Brothers International Ltd. -Republic of Ghana
+                                    2019 to 2021</h5>
+                                <hr />
+                                <p class="card-text">➢ Done procurement 1500 MT cashew in Ghana on 2019.</p>
+                                <p class="card-text">➢ Done procurement 2000 MT cashew in Ghana on 2020.</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card text-center align-items-center p-2" style="width: 22rem; height: 32rem;">
-                        <i class="far fa-building display-1 text-secondary"></i>
-                        <!-- <i class="fas fa-warehouse display-1 text-secondary"></i> -->
-                        <div class="card-body pt-4">
-                            <h5 class="card-title">Malian Cashew Company SARL. (February 2021 to Present Days..)</h5>
-                            <hr />
-                            <p class="card-text">➢ Done procurement 2400 MT Raw Cashew Nuts (RCN) from MALI (BAMAKO) on 2021.</p>
-                            <p class="card-text">➢ Done procurement 650 MT Raw Cashew Nuts (RCN) from BENIN on 2021.</p>
-                        </div>
+                <div class="col-md-4 mt-3">
+                    <div class="card text-center align-items-center p-2" style="height: 32rem;">
+                        <a href="http://www.alsayeghgroup.ae" style="text-decoration: none; color: darkcyan;">
+                            <img style="width: 10rem;"
+                                src="https://media-exp1.licdn.com/dms/image/C4E0BAQGU4q773vtFdw/company-logo_200_200/0/1619943942927?e=1635984000&v=beta&t=AdDgoEg3NkZnpQFjpaPmYujN8uNJaxS8IBI904UQtLU"
+                                alt="">
+                            <!-- <i class="far fa-building display-1 text-secondary"></i> -->
+                            <!-- <i class="fas fa-warehouse display-1 text-secondary"></i> -->
+                            <div class="card-body pt-4">
+                                <h5 class="card-title">Malian Cashew Corporation SARL. (February 2021 to Present Days..)
+                                </h5>
+                                <hr />
+                                <p class="card-text">➢ Done procurement 2400 MT Raw Cashew Nuts (RCN) from MALI (BAMAKO)
+                                    on
+                                    2021.</p>
+                                <p class="card-text">➢ Done procurement 650 MT Raw Cashew Nuts (RCN) from BENIN on 2021.
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
@@ -248,13 +275,240 @@
         </div>
     </section>
 
+    <section id="gallery">
+        <div class="container">
+            <h1 style="text-align: center; padding-top: 5em;">Show Instagram Feed on your Website</h1>
+            <div class="row">
+            <div id="instafeed-container"></div>
+            </div>
+            
+            
+            
+            <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+            <script type="text/javascript">
+                var userFeed = new Instafeed({
+                    get: 'user',
+                    target: "instafeed-container",
+                    resolution: 'low_resolution',
+                    accessToken: 'IGQVJVOFVBR1VwbWYzYUt6NS1NR05MMTBUcWwwVlVwM2JJb1ZA4ZAENQS184NnFoRGtfV19DRXJacjZAUMVZATb1VJSERvNi1RZAHlHeHNscjRHQ3pWQnRBX2ZAoR3VLQVNIRFFsZAWRadENEUUhjT1FqT28ySAZDZD'
+                });
+                userFeed.run();
+            </script>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="contactSection pt-5">
+        <div class="row">
+            <div class="container">
+                <div class=" text-center ">
+                    <h1>Contact me</h1>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-7 mx-auto">
+                        <div class="card mt-2 mx-auto p-4 bg-light">
+                            <div class="card-body bg-light">
+                                <div class="container">
+                                    <form action="https://formspree.io/f/mpzkyjag" method="POST" id="my-form" role="form">
+                                        <div class="controls">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="form_name">Firstname *</label>
+                                                        <input id="form_name" type="text" name="name"
+                                                            class="form-control"
+                                                            placeholder="Please enter your firstname *"
+                                                            required="required" data-error="Firstname is required.">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="form_lastname">Lastname
+                                                            *</label> <input id="form_lastname" type="text"
+                                                            name="surname" class="form-control"
+                                                            placeholder="Please enter your lastname *"
+                                                            required="required" data-error="Lastname is required.">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="form_email">Email *</label>
+                                                        <input id="form_email" type="email" name="email"
+                                                            class="form-control" placeholder="Please enter your email *"
+                                                            required="required" data-error="Valid email is required.">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="form_need">Please specify your
+                                                            need
+                                                            *</label> <select id="form_need" name="need"
+                                                            class="form-control" required="required"
+                                                            data-error="Please specify your need.">
+                                                            <option value="" selected disabled>--Select Your Issue--
+                                                            </option>
+                                                            <option>For Job offers</option>
+                                                            <option>About RCN</option>
+                                                            <option>About Cashew Kernels</option>
+                                                            <option>About Processing</option>
+                                                            <option>Need Cashews/RCN</option>
+                                                            <option>Other</option>
+                                                        </select> </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group"> <label for="form_message">Message *</label>
+                                                        <textarea id="form_message" name="message" class="form-control"
+                                                            placeholder="Write your message here." rows="4"
+                                                            required="required"
+                                                            data-error="Please, leave us a message."></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12"> <input type="submit"
+                                                        class="btn btn-success btn-send pt-2 btn-block "
+                                                        value="Send Message">
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div> <!-- /.8 -->
+                    </div> <!-- /.row-->
+                </div>
+                <div id="status"></div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-1 text-white text-center" style="height: fit-content;">
+                    <a href="http://wa.me/+233557132243"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="col-md-1 text-white text-center" style="height: fit-content;">
+                    <a href="https://www.instagram.com/kichuzz.kichu.737/"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-md-1 text-white text-center" style="height: fit-content;">
+                    <a href="https://www.facebook.com/amal.unnikuttan.58"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="col-md-1 text-white text-center" style="height: fit-content;">
+                    <a href="https://www.linkedin.com/in/amal-kichuzz-a1870620b/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-md-3 text-white text-center" style="height: fit-content;">
+                    <p>Copyright © VishakhViswan</p>
+                </div>
+                <div class="col-md-5 text-white text-center" style="height: fit-content;">
+                    <p>designed & created By: Vishakh V -- vishakhviswan1995@gmail.com">Email</p>
+                </div>
+                
+                
+                
+                
+            </div>
+        </div>
+
+    </footer>
+
     <style>
-        *{
+        * {
             width: 100%;
             margin-left: 0;
             margin-right: 0;
         }
+
+        .contactSection {
+            background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+            font-family: 'Lato', sans-serif
+        }
+
+
+        h1 {
+            margin-bottom: 40px
+        }
+
+        label {
+            color: #333
+        }
+
+        .btn-send {
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            width: 80%;
+            margin-left: 3px
+        }
+
+        .help-block.with-errors {
+            color: #ff5050;
+            margin-top: 5px
+        }
+
+        .card {
+            margin-left: 10px;
+            margin-right: 10px
+        }
+        #status{
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            padding: 1px;
+            margin: 0 auto;
+            border-radius: 8px;
+
+        }
+        #status.success{
+            background-color: rgb(211,250, 153);
+            animation: status 4s ease forwards;
+        }
+        #status.error{
+            background-color: rgb(250,129, 92);
+            color: white;
+            animation: status 4s ease forwards;
+        }
+        @keyframes status{
+            0%{
+                opacity: 1;
+                pointer-events: all;
+            }
+            90%{
+                opacity: 1;
+                pointer-events: all;
+            }
+            100%{
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
     </style>
+    <!-- contact form submition related script************************* -->
+    <script>
+        var form = document.getElementById("my-form");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                status.classList.add('success')
+                status.innerHTML = "Thanks for your submission!";
+                form.reset()
+            }).catch(error => {
+                status.classList.add('error')
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
 
 
 
